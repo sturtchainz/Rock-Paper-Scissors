@@ -6,3 +6,12 @@ padding: 0px;
 box-sizing: border-box;
 font-family: 'Asap', sans-serif;
 }
+
+body {
+    background-color: #24272e;
+}
+
+header {
+    background-color: white;
+    padding: 20px;
+}
