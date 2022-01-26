@@ -96,3 +96,9 @@ img {
     font-weight: bold;
     font-size: 20px;
 }
+
+.help-text li{
+    list-style: circle inside;
+    text-align: left;
+    margin: 10px;
+} 
