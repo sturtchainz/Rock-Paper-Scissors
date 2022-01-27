@@ -18,3 +18,5 @@ let ranNum = Math.floor(Math.random() * 3);
 
 //return a random value in the array
 return choices[ranNum];
+
+console.log(getComputerChoice());
