@@ -8,15 +8,16 @@ let rock_div = document.getElementById("rock");
 let paper_div = document.getElementById("paper");
 let scissors_div = document.getElementById("scissors");
 
-function getComputerChoice()    {
+function getComputerChoice() {
     //Create a new array with the three options for the comp
     let choices = ['Rock', 'Paper', 'Scissors']
+
+    //Create a variable that chooses a number by random between 0 and 2
+    let ranNum = Math.floor(Math.random() * 3);
+
+    //return a random value in the array
+    return choices[ranNum];
 }
 
-//Create a variable that chooses a number by random between 0 and 2
-let ranNum = Math.floor(Math.random() * 3);
-
-
 console.log(getComputerChoice());
-//return a random value in the array
-return choices[ranNum];
+
