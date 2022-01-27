@@ -16,7 +16,7 @@ function getComputerChoice()    {
 //Create a variable that chooses a number by random between 0 and 2
 let ranNum = Math.floor(Math.random() * 3);
 
-//return a random value in the array
-return choices[ranNum];
 
 console.log(getComputerChoice());
+//return a random value in the array
+return choices[ranNum];
