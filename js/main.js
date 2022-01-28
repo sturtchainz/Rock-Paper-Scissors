@@ -19,5 +19,5 @@ function getComputerChoice() {
     return choices[ranNum];
 }
 
-console.log(getComputerChoice());
+
 
