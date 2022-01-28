@@ -22,7 +22,7 @@ function getComputerChoice() {
 function win(userChoice, computerChoice) {
 userScore++
 userScore_span.innerHTML = userScore.toString();
-result_p.innerHTML = "<sup class='badge-two>user</sup> " + userChoice + " beats " + "<sup class='comp-badge-two'>comp</sup> " + computerChoice + ". You win!";
+result_p.innerHTML = "<sup class='badge-two'>user</sup> " + userChoice + " beats " + "<sup class='comp-badge-two'>comp</sup> " + computerChoice + ". You win!";
 }
 
 function lose(userChoice, computerChoice) {
