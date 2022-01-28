@@ -25,6 +25,16 @@ userScore_span.innerHTML = userScore.toString();
 result_p.innerHTML = "<sup class='badge-two>user</sup> " + userChoice + " beats " + "<sup class='badge-two'>comp</sup> " + computerChoice + ". You win!";
 }
 
+function lose(computerChoice, userChoice) {
+    computerScore++
+    computerScore_span.innerHTML = computerScore.toString();
+    result_p.innerHTML = "<sup class='badge-two'>comp</sup> " + computerChoice + " beats " + "<sup class='badge-two'>user</sup> " + ". You lose!";
+}
+
+function tie(userChoice, computerChoice) {
+    result_p.innerHTML = "<sup class='badge-two'>user</sup> " + userChoice + " ties " + "<sup class='badge-two'>comp</sup> " + ". You tied! Do better next time.";
+}
+
 
 function shootRock(){
     game('Rock');
