@@ -25,7 +25,7 @@ userScore_span.innerHTML = userScore.toString();
 result_p.innerHTML = "<sup class='badge-two>user</sup> " + userChoice + " beats " + "<sup class='badge-two'>comp</sup> " + computerChoice + ". You win!";
 }
 
-function lose(computerChoice, userChoice) {
+function lose(userChoice, computerChoice) {
     computerScore++
     computerScore_span.innerHTML = computerScore.toString();
     result_p.innerHTML = "<sup class='badge-two'>comp</sup> " + computerChoice + " beats " + "<sup class='badge-two'>user</sup> " + ". You lose!";
@@ -34,7 +34,6 @@ function lose(computerChoice, userChoice) {
 function tie(userChoice, computerChoice) {
     result_p.innerHTML = "<sup class='badge-two'>user</sup> " + userChoice + " ties " + "<sup class='badge-two'>comp</sup> " + ". You tied! Do better next time.";
 }
-
 
 function shootRock(){
     game('Rock');
@@ -48,10 +47,6 @@ function shootScissors() {
     game('Paper')
 }
 
-
-
-
-
 function game(userChoice) {
     let computerChoice = getComputerChoice()
 
@@ -59,19 +54,19 @@ function game(userChoice) {
         case 'RockScissors':
         case 'PaperRock':
         case 'ScissorsPaper':
-            console.log('The User Wins!')
+            win(userChoice, computerChoice);
             break;
 
         case 'RockPaper':
         case 'PaperScissors':
         case 'ScissorsRock':
-            console.log('The Computer Wins!')
+            lose(userChoice, computerChoice);
             break;
-
+            
         case 'RockRock':
         case 'PaperPaper':
         case 'ScissorsScissors':
-            console.log('It is a tie')
+            tie(userChoice, computerChoice);
             break;
     }
 }
