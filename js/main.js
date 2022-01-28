@@ -19,6 +19,13 @@ function getComputerChoice() {
     return choices[ranNum];
 }
 
+function win(userChoice, computerChoice) {
+userScore++
+userScore_span.innerHTML = userScore.toString();
+result_p.innerHTML = "<sup class='badge-two>user</sup> " + userChoice + " beats " + "<sup class='badge-two'>comp</sup> " + computerChoice + ". You win!";
+}
+
+
 function shootRock(){
     game('Rock');
 }
