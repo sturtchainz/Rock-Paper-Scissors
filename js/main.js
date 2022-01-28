@@ -19,5 +19,42 @@ function getComputerChoice() {
     return choices[ranNum];
 }
 
+function shootRock(){
+    game('Rock');
+}
+
+function shootPaper() {
+    game('Scissors');
+}
+
+function shootScissors() {
+    game('Paper')
+}
 
 
+
+
+
+function game(userChoice) {
+    let computerChoice = getComputerChoice()
+
+    switch (userChoice + computerChoice) {
+        case 'RockScissors':
+        case 'PaperRock':
+        case 'ScissorsPaper':
+            console.log('The User Wins!')
+            break;
+
+        case 'RockPaper':
+        case 'PaperScissors':
+        case 'ScissorsRock':
+            console.log('The Computer Wins!')
+            break;
+
+        case 'RockRock':
+        case 'PaperPaper':
+        case 'ScissorsScissors':
+            console.log('It is a tie')
+            break;
+    }
+}
