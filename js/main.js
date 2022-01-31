@@ -39,12 +39,12 @@ function shootRock(){
     game('Rock');
 }
 
-function shootPaper() {
-    game('Scissors');
-}
-
 function shootScissors() {
     game('Paper')
+}
+
+function shootPaper() {
+    game('Scissors');
 }
 
 function game(userChoice) {
