@@ -40,11 +40,11 @@ function shootRock(){
 }
 
 function shootPaper() {
-    game('Scissors');
+    game('Paper');
 }
 
 function shootScissors() {
-    game('Paper')
+    game('Scissors')
 }
 
 
